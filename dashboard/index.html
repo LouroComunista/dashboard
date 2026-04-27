@@ -634,7 +634,8 @@
       crossorigin="anonymous"
       class="astro-vvvwv3sm"
     ></script>
-    <script src="static/css/dashboard.js" class="astro-vvvwv3sm"></script>
-    {% block page_js %} {% endblock %}
-    
-{% endblock %}
+   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+<script src="{{ url_for('static', filename='css/dashboard.js') }}"></script>
+
+{% block page_js %} {% endblock %}
